@@ -10,7 +10,7 @@ jobs:
           command: echo Hello, world.
       - run:
           name: add channel
-          command: nix-channel --add https://nixos.org/channels/nixpkgs nixpkgs
+          command: nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
       - run:
           name: update channel
           command: nix-channel --update
