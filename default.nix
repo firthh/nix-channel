@@ -5,7 +5,7 @@ let
 
    callPackage = pkgs.lib.callPackageWith (pkgs // self);
 
-   self.developer = {                                                                             
+   self = {                                                                             
       postgresql-9_4_17 = callPackage ./postgres/default.nix {};
       nodejs-9_11_1 = callPackage ./node/default.nix {};
    };
