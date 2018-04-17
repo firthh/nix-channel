@@ -12,5 +12,8 @@ jobs:
           name: add channel
           command: nix-channel --add https://nixos.org/channels/nixpkgs nixpkgs
       - run:
+          name: update channel
+          command: nix-channel --update
+      - run:
           name: nix-build
           command: nix-build .
