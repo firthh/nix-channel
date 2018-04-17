@@ -1,7 +1,7 @@
 { stdenv, fetchurl, pkgs }:
 let
   nodeVersion = "9.11.1";
-in pkgs.nodejs-8_x.overrideAttrs (oldAttrs: {
+in pkgs.nodejs-9_x.overrideAttrs (oldAttrs: {
        version = nodeVersion;
        name = "nodejs-${nodeVersion}";
        src = fetchurl {
