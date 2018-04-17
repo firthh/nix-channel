@@ -9,5 +9,8 @@ jobs:
           name: Greeting
           command: echo Hello, world.
       - run:
+          name: add channel
+          command: nix-channel --add https://nixos.org/channels/nixpkgs nixpkgs
+      - run:
           name: nix-build
           command: nix-build .
